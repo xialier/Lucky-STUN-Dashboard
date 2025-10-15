@@ -35,7 +35,7 @@ lucky_dashboard/
 1.  **克隆仓库：**
 
 	```bash
-	git clone https://github.com/xialier/Lucky-STUN-Dashboard/lucky_dashboard.git
+	git clone https://github.com/xialier/Lucky-STUN-Dashboard.git
 	cd lucky_dashboard
 	```
 
