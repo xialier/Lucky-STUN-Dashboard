@@ -1,0 +1,12 @@
+version: '3.8' # 可以删除此行以消除警告
+
+services:
+  backend:
+	build: . # 指向当前目录，Dockerfile 就在这里
+	container_name: lucky_backend
+	restart: always
+	ports:
+	  - "5001:5000" # 映射宿主机5001端口到容器内部5000端口
+	# 如果您希望数据持久化在主机上，可以添加volumes
+	volumes:
+	  - ./lucky_ip_data.json:/app/lucky_ip_data.json # 将数据文件挂载到主机
